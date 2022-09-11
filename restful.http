@@ -1,0 +1,46 @@
+###
+GET http://localhost:3000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFkNDU5NmIyNmE1YjIwYjQwYWVmOTIiLCJhY3RpdmUiOmZhbHNlLCJpYXQiOjE2NjI4NjI5NzEsImV4cCI6MTY2Mjg3MDE3MX0.hQxgT7EtCb1J7Fsl6feIsyg_LTTWtwiOGC9glH80xtU
+
+###
+GET http://localhost:3000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFkM2U2ZTE2MzE5ZTA4NTlmNDYyM2QiLCJhY3RpdmUiOmZhbHNlLCJpYXQiOjE2NjI4NjM0MTQsImV4cCI6MTY2Mjg3MDYxNH0.wpO7w2dOQxVUAfCIg01R-E4fCdjMIHKAdeNSfgdeKz4
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "mansimovnijat@gmail.com",
+    "password": "654731"
+}
+
+###
+PATCH http://localhost:3000/api/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFkM2QwNjUzMWY4NzEzMDczMjhjMGYiLCJhY3RpdmUiOmZhbHNlLCJpYXQiOjE2NjI4NjA3MDMsImV4cCI6MTY2Mjg2NzkwM30.vqCdSWOvPD6ha5b8-mFprB0OaXEnSW5P-Ygp2XcqV_w
+
+{
+    "username": "nijatmansimov"
+}
+
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Ibrahim Mansimov",
+    "username": "mansim9v",
+    "email": "mansimovibrahim@gmail.com",
+    "password": "ibrahim86"
+}
+
+###
+GET http://localhost:3000/api/users/deleteAll
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFkNDU5NmIyNmE1YjIwYjQwYWVmOTIiLCJhY3RpdmUiOmZhbHNlLCJpYXQiOjE2NjI4NjI3NjIsImV4cCI6MTY2Mjg2OTk2Mn0.a5jnf965G21Wpd8CjAvheHwfu9gwZuQFJIxuNjtx5h
+
+###
+DELETE http://localhost:3000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFkM2U2ZTE2MzE5ZTA4NTlmNDYyM2QiLCJhY3RpdmUiOmZhbHNlLCJpYXQiOjE2NjI4NjM0MTQsImV4cCI6MTY2Mjg3MDYxNH0.wpO7w2dOQxVUAfCIg01R-E4fCdjMIHKAdeNSfgdeKz4
